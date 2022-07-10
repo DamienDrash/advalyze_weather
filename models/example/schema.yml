@@ -2,6 +2,15 @@
 version: 2
 
 models:
+    - name: weather_l7days_view
+      description: "View with weather data"
+      columns:
+          - name: city
+          - name: date
+          - name: avg_temp
+          - name: totalprecip_mm
+          - name: running_sum_avg_temp
+          - name: running_sum_totalprecip_mm
     - name: my_first_dbt_model
       description: "A starter dbt model"
       columns:
